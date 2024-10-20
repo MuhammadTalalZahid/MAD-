@@ -48,7 +48,7 @@
             android:id="@+id/emailTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="techok07@gmail.com"
+            android:text="abc123@gmail.com"
             android:textSize="14sp"
             android:textColor="#707070"
             android:layout_marginTop="4dp"/>
@@ -92,50 +92,28 @@
         android:padding="16dp">
 
         <!-- My Orders -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="106dp"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_orders" <!-- Replace with actual icon -->
-            android:layout_marginEnd="16dp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="My Orders"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/myOrdersIcon" />
-        </LinearLayout>
 
         <!-- Favourites -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="151dp"
+            android:layout_width="386dp"
+            android:layout_height="87dp"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="16dp">
 
+            <!-- Replace with actual icon -->
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_favourites" <!-- Replace with actual icon -->
-            android:layout_marginEnd="16dp"/>
+                android:layout_width="38dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_favorites"
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="193dp"
+                android:layout_height="33dp"
+                android:paddingTop="4dp"
                 android:text="Favourites"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -144,7 +122,7 @@
         <!-- My Addresses -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="76dp"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:gravity="center_vertical"
@@ -152,14 +130,14 @@
             android:padding="16dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_addresses" <!-- Replace with actual icon -->
-            android:layout_marginEnd="16dp"/>
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_address"
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="193dp"
+                android:layout_height="33dp"
+                android:paddingTop="4dp"
                 android:text="My Addresses"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -168,7 +146,7 @@
         <!-- Settings -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="113dp"
+            android:layout_height="76dp"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:gravity="center_vertical"
@@ -176,17 +154,43 @@
             android:padding="16dp">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="36dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_settings" <!-- Replace with actual icon -->
-            android:layout_marginEnd="16dp"/>
+                android:src="@drawable/ic_settings"
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="193dp"
+                android:layout_height="33dp"
+                android:paddingTop="4dp"
                 android:text="Settings"
                 android:textColor="#000000"
                 android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:src="@drawable/orders"
+
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="33dp"
+                android:paddingTop="4dp"
+                android:text="My Orders"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/myOrdersIcon" />
         </LinearLayout>
     </LinearLayout>
 
@@ -224,7 +228,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/bottom_navigation_menu"
+        app:menu="@menu/bottom_nav_menu"
         android:background="#FFFFFF"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
